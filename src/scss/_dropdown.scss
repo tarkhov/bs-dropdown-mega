@@ -1,0 +1,29 @@
+// Mega menu
+.dropdown-mega {
+  position: static !important;
+}
+
+.dropdown-mega-menu {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.dropdown-menu-body {
+  padding: $dropdown-menu-body-padding;
+}
+
+// Hover
+.dropdown-hover {
+  &.dropdown .dropdown-menu {
+    margin-top: calc(var(--#{$prefix}dropdown-border-width) * -1) !important;
+  }
+  &.dropdup .dropdown-menu {
+    margin-bottom: calc(var(--#{$prefix}dropdown-border-width) * -1) !important;
+  }
+  &.dropstart .dropdown-menu {
+    margin-right: calc(var(--#{$prefix}dropdown-border-width) * -1) !important;
+  }
+  &.dropend .dropdown-menu {
+    margin-left: calc(var(--#{$prefix}dropdown-border-width) * -1) !important;
+  }
+}
